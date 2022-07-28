@@ -2,4 +2,132 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Roboto;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+.left{
+    display: grid;
+    grid-template-rows: 70px 200px 200px;
+    background-color: #334155;
+    color: white;
+    padding: 15px;
+}
+.left ul li{
+    list-style-type: none;
+    padding: 5px;
+}
+.left ul li:hover{
+    background-color: rgb(240, 64, 64);
+    cursor: pointer;
+    font-weight: bold;
+}
+.left_contact{
+    display: flex;
+    justify-self: center;
+    align-items: flex-end;
+    color: #afb8c4;
+}
+.left_contact:hover{
+    cursor: pointer;
+    color: #fff;
+}
+.right{
+    height: 100vh;
+    background-color: #e2e8f0;
+}
+.right_top{
+    padding: 15px;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+.right_top input{
+    border-radius: 15px;
+    border: 1px solid #94a3b8;
+    padding: 0px 55px;
+    background-color: #f1f5f9;
+}
+.profiledetails{
+    justify-self: end;
+    font-weight: bold;
+}
+.profilegreeting{
+    display: flex;
+    align-items: center;
+}
+.profilegreeting img{
+    margin: 10px;
+    border: .6px solid #94a3b8;
+    border-radius: 50%;
+}
+.profilebuttons{
+    justify-self: end;
+    align-self: center;
+}
+.profilebuttons button{
+    padding: 10px 15px;
+    margin: 0 10px;
+    border: 0px;
+    /* background-color: #334155; */
+    background-color: #64748b;
+    color: white;
+    border-radius: 5px;
+    transition: .2s;
+}
+.profilebuttons button:hover{
+    cursor: pointer;
+    /* background-color: #94a3b8; */
+    background-color: #1e293b;
+}
+.content{
+    /* background-color: #e2e8f0; */
+    padding: 0 25px 0 0 ;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.projects{
+    margin: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 1fr;
+}
+.projectbox{
+    margin: 5px;
+    padding: 15px 25px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    border-left: #334155;
+    border-style: solid;
+    border-left-color: #1e293b;
+    border-left-width: 5px;
+}
+.projectbox p {
+    font-size: 14px;
+}
+.announcements h3{
+    margin: 15px 10px;
+}
+.announcements > .projectbox > hr{
+    margin: 10px 0;
+    color: #afb8c4;
+}
+
+@media screen and (max-width: 1195px) {
+    .left h2{
+        display: flex;
+        align-items: center;
+    }
+    .left h2 img{
+        /* background-color: rebeccapurple; */
+        /* align-self: center; */
+        height: 20px;
+    }
+    
 }
