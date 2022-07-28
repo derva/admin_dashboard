@@ -1,6 +1,7 @@
 # admin_dashboard
 This is repo for Admin Dashboard project following TheOdinProject course. 
 
+Live: https://derva.github.io/admin_dashboard/
 
 Resources:
 https://materialdesignicons.com/ => icons
